@@ -1,6 +1,5 @@
 import sys
 
-
 class GameEntry:
     def __init__(self, name, score):
         self._name = name
@@ -45,8 +44,7 @@ def main():
     bestPlayer = int(input("Jumlah best player: "))
     scoreBoard = Scoreboard(bestPlayer)
 
-    i = 1
-    while i>0:
+    while True:
         print("""\n1. Tambah pemain\n2. Lihat papan score\n3. Keluar""")
         pilihan = int(input("Masukkan pilihan: "))
 
